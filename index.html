@@ -2,32 +2,145 @@
     <head>  <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; text-align: center;
-           background-image: url('Hintergrund2.jpg'), url('img_1720519705_406430_0.webp');
-           background-position: bottom center, top center;
-           background-size: cover, contain;
-           background-repeat: no-repeat, no-repeat;
-           
-        }
+            body {
+                font-family: arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                min-height: 100vh;
+                background-image: url('Hintergrund2.jpg');
+                background-repeat: no-repeat;
+                background-position: bottom center;
+                background-size: cover;background-attachment: fixed;
+                display: flex;
+                justify-content:center;
+                align-items: flex-start;
+            }
+            .main-container {
+                max-width: 600px;
+                width:90%;
+                background-color: rgba(255,255,255,0.95);
+                margin: 50px auto;
+                padding: 30px;
+                text-align: center;
+                border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+                background-image: url('Logo.webp');
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 150px;
+            }
+            header {
+                position: relative;
+                margin-bottom: 30px;
+            }
+            .logo-wrapper {
+              text-align: right;
+              margin-bottom: 10px;
+            }
+            .logo-img {
+                max-width: 150px;
+                height: auto;
+            }
+            .profile-img {
+                width: 150px;
+                height:150px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 5px solid white;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                margin-bottom: 15px;
+            }
+            h1 {
+                font-size: 24px;
+                margin: 0 0 5px 0;
+                color: #333;
+            }
+            h3 {
+                font-size: 16px;
+                font-weight: normal;
+                color: #666;
+                margin: 0;
+            }
+            .company-name {
+
+            font-weight: bold;
+            margin-top: 20px;
+            }
+            .contact-info {
+                margin: 20px 0;
+                font-size: 14px;
+            }
+            .contact-info p {
+                margin: 5px 0;
+            }
+            .qr-wrapper {
+                width: 150px;
+                height: auto;
+            }
+            .status-icons {
+                font-size: 18px;
+                color: #666;
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                gab: 15px;
+                align-items: center;
+            }
+            .timestamp {
+                font-size: 12px;
+                color: #999;
+                margin-left: 10px;
+            }
+            footer {
+                margin-top: 40px;
+                font-size: 12px;
+                color: #888;
+                border-top: 1px solid #eee;
+                padding-top: 15px;
+            }
+            footer a {
+                color: #888;
+                text-decoration: none;
+                margin: 0 5px;
+            }
+            @media (max-width: 600px) {
+                .main-container {
+                    margin: 10px auto;
+                    padding: 20px;
+                }
+                h1 {font-size: 20px; }
+                .profile-img {width 120px; height: 120px;}
+            }
+        
         </style>
         <title>Benas Danielaitis | Dein Energie-Experte </title>
     
 </head>
-<body> <header>
+<body><div class="main-container"> 
+<header>
     
-    <img src="20260706_141616(1).png" alt="Bild von Benas Danielaitis" width="150">
-    <h1>Benas Danielaitis</h1>  <h3>Unabhängiger Fachberater für Energie & Tarifoptimierungen</h3>
-</header>
-<main><h3>Benas Leonas Danielaitis</h3>
-    <p> Telefon: +4915170392922 <br>
-    E-Mail: benas.leonas.danielaitis1@gmail.com</p>
-    <a href="tel:+4915170392922">📞</a>
-    <a href="mailto:benas.leonas.danielaitis1@gmail.com">✉</a>
-<button onclick="navigator.share({title: 'Benas Danielaitis - Energieberater', url: window.location.href})">🔗</button>
-        <br>
-        <img src="qr-code.png" alt="QR-Code zur digitalen Visitenkarte von Benas Danielaitis" width="150">
-        
-        </main>
+<div class="logo-wrapper">
+    <img rsc="Hintergrund2.jpg" alt="Energiespardienst 24 Logo" class="logo-img"
+</div>
+<div class="profile-wrapper">
+    <img src="Benas Bild.png" alt="Bild von Benas Danielaitis" class="profile-img">
+    <h1>Benas Danielaitis</h1>
+    <h3>Unabhängiger Fachberater für Energie & Tarifoptimierungen</h3>
+</div></header>
+<main>
+<p class="company-name">Benas Leonas Danielaitis</p>
+<div class="contact-info">
+    <p>Telefon: +4915170392922</p>
+    <p>E-Mail: benas.leonas.danielaitis1@gmail.com</p>
+</div>
+<div class="qr-wrapper">
+    <img src="qr-code.png" alt="QR-Code zur Visitenkarte von Benas Danielaitis" class="qr-img">
+</div></main>
+
         <footer>
             <p>&copy; 2026 Benas Danielaitis | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
-        </footer> </body> </html>
+        </footer> 
+        </div>
+    </body> </html>
